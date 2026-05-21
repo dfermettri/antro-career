@@ -1,451 +1,349 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Antro — Карьера</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="header new-header ">
+  <header class="header new-header">
     <div class="header__box">
-      <a href="/" class="header__logo js-header-logo">
+      <a href="/" class="header__logo js-header-logo" aria-label="Antro">
         <img src="https://antro.cx/wp-content/themes/antro/new-assets/img/antro.svg" alt="">
       </a>
+
       <a href="https://t.me/antro_cx" class="header__social">
-        <img src="https://antro.cx/wp-content/themes/antro/new-assets/img/svg/telegram-dark.svg" alt="" class="">
+        <img src="https://antro.cx/wp-content/themes/antro/new-assets/img/svg/telegram-dark.svg" alt="">
         Телеграм-канал
       </a>
-      <button class=" btn-reset btn btn_lightning btn_hover-pink js-modal-open  " data-modal="order" onclick="ym(89555039,'reachGoal','header'); return true;">
+
+      <button type="button" class="btn-reset btn btn_lightning btn_hover-pink js-modal-open" data-modal="order" data-goal="header">
         Оставить заявку
-        <div class="btn__circle">
+        <span class="btn__circle">
           <img src="https://antro.cx/wp-content/themes/antro/new-assets/img/svg/lightning.svg" alt="">
-        </div>
+        </span>
       </button>
     </div>
+
     <div class="new-header__links">
-      <nav class="new-header__nav">
+      <nav class="new-header__nav" aria-label="Основная навигация">
         <a href="/cases/" class="header__link new-header__link">Кейсы</a>
         <a href="/#main-services" class="header__link new-header__link">Услуги</a>
         <a href="/#research" class="header__link new-header__link">Экспертиза</a>
-        <a href="#" class="header__link new-header__link" style="display:none">Карьера</a>
         <a href="/contacts/" class="header__link new-header__link">Контакты</a>
       </nav>
+
       <div class="new-header__nav">
         <a href="/audit/" class="header__link new-header__link">Юзабилити-аудит</a>
         <div class="new-header__dev">
           <a href="/growth_ecomm/" class="new-header__dev-link">Продуктовое развитие</a>
-          <div class="new-header__dev-video js-modal-open" data-modal="video-header">
+          <button type="button" class="new-header__dev-video js-modal-open" data-modal="video-header">
             <img src="https://antro.cx/wp-content/themes/antro/new-assets/img/svg/video-play.svg" alt="">
             Смотреть видео
-          </div>
+          </button>
         </div>
       </div>
     </div>
   </header>
 
   <div class="mobile-menu new-mobile-menu">
-    <div class="mobile-menu__black"></div>
+    <div class="mobile-menu__black" aria-hidden="true"></div>
 
-    <div class="mobile-menu__slide js-mobile-menu">
+    <div class="mobile-menu__slide js-mobile-menu" id="mobile-menu">
       <div class="new-mobile-menu__slide-head">
         <div class="new-mobile-menu__slide-link">
           <a href="/growth_ecomm/">Продуктовое развитие</a>
-          <div class="new-mobile-menu__video js-modal-open" data-modal="video-header">
+          <button type="button" class="new-mobile-menu__video js-modal-open" data-modal="video-header">
             <img src="https://antro.cx/wp-content/themes/antro/new-assets/img/svg/video-play.svg" alt="" class="new-mobile-menu__video-icon">
             Видео
-          </div>
+          </button>
         </div>
+
         <a href="/audit/" class="new-mobile-menu__slide-link">Юзабилити-аудит</a>
       </div>
+
       <div class="new-mobile-menu__slide-body">
         <div class="mobile-menu__col mobile-menu__col_links">
           <a href="/cases/" class="header__link">Кейсы</a>
           <a href="/#main-services" class="header__link">Услуги</a>
           <a href="/#research" class="header__link">Экспертиза</a>
-          <a href="#" class="header__link" style="display: none">Карьера</a>
           <a href="/contacts/" class="header__link">Контакты</a>
         </div>
 
         <div class="mobile-menu__col mobile-menu__col_first">
           <a href="https://t.me/antro_cx" class="mobile-menu__social">
-            <div class="mobile-menu__social-icon">
+            <span class="mobile-menu__social-icon">
               <img src="https://antro.cx/wp-content/themes/antro/new-assets/img/svg/telegram-dark.svg" alt="">
-            </div>
+            </span>
             Телеграм-канал
           </a>
 
           <a href="https://vc.ru/id1244031" class="mobile-menu__social">
-            <div class="mobile-menu__social-icon">
+            <span class="mobile-menu__social-icon">
               <img src="https://antro.cx/wp-content/themes/antro/new-assets/img/svg/vc-dark.svg" alt="">
-            </div>
+            </span>
             Блог на VC
           </a>
         </div>
       </div>
     </div>
 
-    <div class="mobile-menu__burger js-burger">
-      <div class="mobile-menu__burger-icon">
+    <button type="button" class="mobile-menu__burger js-burger" aria-controls="mobile-menu" aria-expanded="false">
+      <span class="mobile-menu__burger-icon" aria-hidden="true">
         <span></span>
         <span></span>
-      </div>
+      </span>
       <span class="mobile-menu__burger-text">Меню</span>
-    </div>
+    </button>
 
-    <button class="btn-reset btn btn_lightning js-modal-open " data-modal="order" onclick="ym(89555039,'reachGoal','header'); return true;">
+    <button type="button" class="btn-reset btn btn_lightning js-modal-open" data-modal="order" data-goal="header">
       Оставить заявку
-      <div class="btn__circle">
+      <span class="btn__circle">
         <img src="https://antro.cx/wp-content/themes/antro/new-assets/img/svg/lightning.svg" alt="">
-      </div>
+      </span>
     </button>
   </div>
 
-  <script>
-    window.ym = window.ym || function(){};
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <h1>
+              Стань частью<br>
+              команды Antro
+            </h1>
 
-    document.addEventListener('DOMContentLoaded', function(){
-      const burger = document.querySelector('.js-burger');
-      const slide = document.querySelector('.js-mobile-menu');
-      const black = document.querySelector('.mobile-menu__black');
-
-      if (!burger || !slide || !black) {
-        return;
-      }
-
-      burger.addEventListener('click', function(){
-        burger.classList.toggle('mobile-menu__burger_open');
-        slide.classList.toggle('mobile-menu__slide_open');
-        black.classList.toggle('mobile-menu__black_show');
-      });
-
-      black.addEventListener('click', function(){
-        burger.classList.remove('mobile-menu__burger_open');
-        slide.classList.remove('mobile-menu__slide_open');
-        black.classList.remove('mobile-menu__black_show');
-      });
-    });
-  </script>
-
-  <section class="hero">
-
-    <div class="container">
-
-      <div class="hero-grid">
-
-        <div>
-
-          <h1>
-            Стань частью<br>
-            команды Antro
-          </h1>
-
-          <p class="hero-subtitle">
-            Мы создаем сильные e-commerce продукты,
-            исследуем пользовательский опыт
-            и делаем digital, который влияет на бизнес.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#jobs" class="btn">Смотреть вакансии</a>
-            <a href="#contact" class="btn btn-light">
-              Написать нам
-            </a>
-          </div>
-
-          <div class="hero-tags">
-            <div class="tag">20+ специалистов</div>
-            <div class="tag">Remote-first</div>
-            <div class="tag">UX / E-commerce</div>
-            <div class="tag">Product culture</div>
-            <div class="tag">Fashion & Retail</div>
-          </div>
-
-        </div>
-
-        <div class="hero-visual">
-
-          <div class="blob"></div>
-
-          <div class="hero-card">
-            <h3>JOIN<br>ANTRO</h3>
-            <p>
-              Делаем digital-продукты,
-              которыми действительно удобно пользоваться.
+            <p class="hero-subtitle">
+              Мы создаем сильные e-commerce продукты,
+              исследуем пользовательский опыт
+              и делаем digital, который влияет на бизнес.
             </p>
+
+            <div class="hero-actions">
+              <a href="#jobs" class="btn">Смотреть вакансии</a>
+              <a href="#contact" class="btn btn-light">Написать нам</a>
+            </div>
+
+            <div class="hero-tags">
+              <div class="tag">20+ специалистов</div>
+              <div class="tag">Remote-first</div>
+              <div class="tag">UX / E-commerce</div>
+              <div class="tag">Product culture</div>
+              <div class="tag">Fashion &amp; Retail</div>
+            </div>
           </div>
 
+          <div class="hero-visual">
+            <div class="blob"></div>
+            <div class="hero-card">
+              <h3>JOIN<br>ANTRO</h3>
+              <p>
+                Делаем digital-продукты,
+                которыми действительно удобно пользоваться.
+              </p>
+            </div>
+          </div>
         </div>
-
       </div>
+    </section>
 
-    </div>
+    <section class="pink-section" id="values">
+      <div class="container">
+        <h2>Как мы работаем</h2>
+        <p>
+          Мы объединяем дизайн, аналитику и разработку,
+          чтобы создавать digital-решения, которые помогают бизнесу расти.
+        </p>
 
-  </section>
-
-  <section class="pink-section" id="values">
-
-    <div class="container">
-
-      <h2>Как мы работаем</h2>
-
-      <p>
-        Мы объединяем дизайн, аналитику и разработку,
-        чтобы создавать digital-решения, которые помогают бизнесу расти.
-      </p>
-
-      <div class="values-grid">
-
-        <div class="value-card">
-          <h3>Продуктовый подход</h3>
-          <p>
-            Думаем не экранами, а пользовательскими сценариями и метриками.
-          </p>
-        </div>
-
-        <div class="value-card">
-          <h3>Без бюрократии</h3>
-          <p>
-            Короткие циклы, быстрые решения и прозрачная коммуникация.
-          </p>
-        </div>
-
-        <div class="value-card">
-          <h3>Рост через практику</h3>
-          <p>
-            Сложные проекты, исследования и реальные задачи.
-          </p>
-        </div>
-
-        <div class="value-card">
-          <h3>Сильная команда</h3>
-          <p>
-            Дизайнеры, аналитики и разработчики работают вместе.
-          </p>
-        </div>
-
-        <div class="value-card">
-          <h3>Эксперименты</h3>
-          <p>
-            Проверяем гипотезы и тестируем новые подходы.
-          </p>
-        </div>
-
-        <div class="value-card">
-          <h3>Насмотренность</h3>
-          <p>
-            Следим за лучшими мировыми digital-практиками.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="jobs" id="jobs">
-
-    <div class="container">
-
-      <h2>Кого мы ищем</h2>
-
-      <div class="jobs-grid">
-
-        <div class="job-card">
-
-          <div class="job-image">✦</div>
-
-          <h3>Product Designer</h3>
-
-          <p>
-            UX/UI, исследования, customer journeys
-            и проектирование сложных интерфейсов.
-          </p>
-
-          <div class="job-tags">
-            <span>Figma</span>
-            <span>UX</span>
-            <span>Research</span>
-            <span>E-commerce</span>
+        <div class="values-grid">
+          <div class="value-card">
+            <h3>Продуктовый подход</h3>
+            <p>Думаем не экранами, а пользовательскими сценариями и метриками.</p>
           </div>
 
-          <a href="#" class="btn">Подробнее</a>
-
-        </div>
-
-        <div class="job-card">
-
-          <div class="job-image">◉</div>
-
-          <h3>Frontend Developer</h3>
-
-          <p>
-            Современный frontend,
-            анимации и продуктовые интерфейсы.
-          </p>
-
-          <div class="job-tags">
-            <span>Vue</span>
-            <span>Nuxt</span>
-            <span>GSAP</span>
-            <span>TypeScript</span>
+          <div class="value-card">
+            <h3>Без бюрократии</h3>
+            <p>Короткие циклы, быстрые решения и прозрачная коммуникация.</p>
           </div>
 
-          <a href="#" class="btn">Подробнее</a>
-
-        </div>
-
-        <div class="job-card">
-
-          <div class="job-image">△</div>
-
-          <h3>Product Analyst</h3>
-
-          <p>
-            Метрики, аналитика,
-            гипотезы и рост digital-продуктов.
-          </p>
-
-          <div class="job-tags">
-            <span>GA4</span>
-            <span>SQL</span>
-            <span>Funnels</span>
-            <span>Growth</span>
+          <div class="value-card">
+            <h3>Рост через практику</h3>
+            <p>Сложные проекты, исследования и реальные задачи.</p>
           </div>
 
-          <a href="#" class="btn">Подробнее</a>
+          <div class="value-card">
+            <h3>Сильная команда</h3>
+            <p>Дизайнеры, аналитики и разработчики работают вместе.</p>
+          </div>
 
+          <div class="value-card">
+            <h3>Эксперименты</h3>
+            <p>Проверяем гипотезы и тестируем новые подходы.</p>
+          </div>
+
+          <div class="value-card">
+            <h3>Насмотренность</h3>
+            <p>Следим за лучшими мировыми digital-практиками.</p>
+          </div>
         </div>
-
       </div>
+    </section>
 
-    </div>
+    <section class="jobs" id="jobs">
+      <div class="container">
+        <h2>Кого мы ищем</h2>
 
-  </section>
+        <div class="jobs-grid">
+          <div class="job-card">
+            <div class="job-image">✦</div>
+            <h3>Product Designer</h3>
+            <p>
+              UX/UI, исследования, customer journeys
+              и проектирование сложных интерфейсов.
+            </p>
 
-  <section class="pink-section" id="life">
+            <div class="job-tags">
+              <span>Figma</span>
+              <span>UX</span>
+              <span>Research</span>
+              <span>E-commerce</span>
+            </div>
 
-    <div class="container">
+            <a href="#contact" class="btn">Подробнее</a>
+          </div>
 
-      <h2>Жизнь внутри Antro</h2>
+          <div class="job-card">
+            <div class="job-image">◉</div>
+            <h3>Frontend Developer</h3>
+            <p>
+              Современный frontend,
+              анимации и продуктовые интерфейсы.
+            </p>
 
-      <p>
-        Команда, внутренние лекции, поездки,
-        исследования и совместные эксперименты.
-      </p>
+            <div class="job-tags">
+              <span>Vue</span>
+              <span>Nuxt</span>
+              <span>GSAP</span>
+              <span>TypeScript</span>
+            </div>
 
-      <div class="life-grid">
+            <a href="#contact" class="btn">Подробнее</a>
+          </div>
 
-        <div class="life-item large">
-          <div class="life-caption">Командные встречи</div>
+          <div class="job-card">
+            <div class="job-image">△</div>
+            <h3>Product Analyst</h3>
+            <p>
+              Метрики, аналитика,
+              гипотезы и рост digital-продуктов.
+            </p>
+
+            <div class="job-tags">
+              <span>GA4</span>
+              <span>SQL</span>
+              <span>Funnels</span>
+              <span>Growth</span>
+            </div>
+
+            <a href="#contact" class="btn">Подробнее</a>
+          </div>
         </div>
-
-        <div class="life-item">
-          <div class="life-caption">Workshop</div>
-        </div>
-
-        <div class="life-item">
-          <div class="life-caption">Research</div>
-        </div>
-
-        <div class="life-item">
-          <div class="life-caption">Конференции</div>
-        </div>
-
-        <div class="life-item">
-          <div class="life-caption">Creative sessions</div>
-        </div>
-
       </div>
+    </section>
 
-    </div>
+    <section class="pink-section" id="life">
+      <div class="container">
+        <h2>Жизнь внутри Antro</h2>
+        <p>
+          Команда, внутренние лекции, поездки,
+          исследования и совместные эксперименты.
+        </p>
 
-  </section>
+        <div class="life-grid">
+          <div class="life-item large">
+            <div class="life-caption">Командные встречи</div>
+          </div>
 
-  <section class="culture">
+          <div class="life-item">
+            <div class="life-caption">Workshop</div>
+          </div>
 
-    <div class="container">
+          <div class="life-item">
+            <div class="life-caption">Research</div>
+          </div>
 
-      <h2>Нам важно</h2>
+          <div class="life-item">
+            <div class="life-caption">Конференции</div>
+          </div>
 
-      <div class="culture-grid">
-
-        <div class="culture-box">
-
-          <h3>Что ценим</h3>
-
-          <ul>
-            <li>Самостоятельность</li>
-            <li>Системное мышление</li>
-            <li>Насмотренность</li>
-            <li>Инициативность</li>
-            <li>Желание расти</li>
-          </ul>
-
+          <div class="life-item">
+            <div class="life-caption">Creative sessions</div>
+          </div>
         </div>
-
-        <div class="culture-box">
-
-          <h3>Что не любим</h3>
-
-          <ul>
-            <li>Микроменеджмент</li>
-            <li>Формальность ради формальности</li>
-            <li>Токсичность</li>
-            <li>Отсутствие инициативы</li>
-            <li>Работу «для галочки»</li>
-          </ul>
-
-        </div>
-
       </div>
+    </section>
 
-    </div>
+    <section class="culture">
+      <div class="container">
+        <h2>Нам важно</h2>
 
-  </section>
+        <div class="culture-grid">
+          <div class="culture-box">
+            <h3>Что ценим</h3>
+            <ul>
+              <li>Самостоятельность</li>
+              <li>Системное мышление</li>
+              <li>Насмотренность</li>
+              <li>Инициативность</li>
+              <li>Желание расти</li>
+            </ul>
+          </div>
 
-  <section class="cta" id="contact">
+          <div class="culture-box">
+            <h3>Что не любим</h3>
+            <ul>
+              <li>Микроменеджмент</li>
+              <li>Формальность ради формальности</li>
+              <li>Токсичность</li>
+              <li>Отсутствие инициативы</li>
+              <li>Работу «для галочки»</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="container">
+    <section class="cta" id="contact">
+      <div class="container">
+        <div>
+          <h2>Давай делать сильный e-commerce вместе</h2>
+          <p>
+            Если тебе близок наш подход —
+            отправь резюме или портфолио.
+          </p>
+        </div>
 
-      <h2>
-        Давай делать сильный e-commerce вместе
-      </h2>
+        <form class="form" action="#" method="post">
+          <input type="text" name="name" placeholder="Ваше имя" autocomplete="name" required>
+          <input type="text" name="contact" placeholder="Telegram / Email" autocomplete="email" required>
+          <input type="url" name="portfolio" placeholder="Ссылка на портфолио" autocomplete="url">
+          <textarea name="message" placeholder="Расскажите немного о себе"></textarea>
 
-      <p>
-        Если тебе близок наш подход —
-        отправь резюме или портфолио.
-      </p>
-
-      <form class="form">
-
-        <input type="text" placeholder="Ваше имя">
-
-        <input type="text" placeholder="Telegram / Email">
-
-        <input type="text" placeholder="Ссылка на портфолио">
-
-        <textarea placeholder="Расскажите немного о себе"></textarea>
-
-        <button class="btn">
-          Отправить заявку
-        </button>
-
-      </form>
-
-    </div>
-
-  </section>
+          <button type="submit" class="btn">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <footer>
     © ANTRO — Career Page Concept
   </footer>
-
 </body>
 </html>
