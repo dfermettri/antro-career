@@ -4,10 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Antro — Карьера</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -33,10 +29,10 @@
 
     <div class="new-header__links">
       <nav class="new-header__nav" aria-label="Основная навигация">
-        <a href="/cases/" class="header__link new-header__link">Кейсы</a>
-        <a href="/#main-services" class="header__link new-header__link">Услуги</a>
-        <a href="/#research" class="header__link new-header__link">Экспертиза</a>
-        <a href="/contacts/" class="header__link new-header__link">Контакты</a>
+        <a href="#clients" class="header__link new-header__link">Проекты</a>
+        <a href="#life" class="header__link new-header__link">Жизнь</a>
+        <a href="#offices" class="header__link new-header__link">Офисы</a>
+        <a href="#jobs" class="header__link new-header__link">Вакансии</a>
       </nav>
 
       <div class="new-header__nav">
@@ -70,10 +66,10 @@
 
       <div class="new-mobile-menu__slide-body">
         <div class="mobile-menu__col mobile-menu__col_links">
-          <a href="/cases/" class="header__link">Кейсы</a>
-          <a href="/#main-services" class="header__link">Услуги</a>
-          <a href="/#research" class="header__link">Экспертиза</a>
-          <a href="/contacts/" class="header__link">Контакты</a>
+          <a href="#clients" class="header__link">Проекты</a>
+          <a href="#life" class="header__link">Жизнь</a>
+          <a href="#offices" class="header__link">Офисы</a>
+          <a href="#jobs" class="header__link">Вакансии</a>
         </div>
 
         <div class="mobile-menu__col mobile-menu__col_first">
@@ -111,239 +107,192 @@
   </div>
 
   <main>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div>
-            <h1>
-              Стань частью<br>
-              команды Antro
-            </h1>
-
-            <p class="hero-subtitle">
-              Мы создаем сильные e-commerce продукты,
-              исследуем пользовательский опыт
-              и делаем digital, который влияет на бизнес.
-            </p>
-
-            <div class="hero-actions">
-              <a href="#jobs" class="btn">Смотреть вакансии</a>
-              <a href="#contact" class="btn btn-light">Написать нам</a>
-            </div>
-
-            <div class="hero-tags">
-              <div class="tag">20+ специалистов</div>
-              <div class="tag">Remote-first</div>
-              <div class="tag">UX / E-commerce</div>
-              <div class="tag">Product culture</div>
-              <div class="tag">Fashion &amp; Retail</div>
-            </div>
-          </div>
-
-          <div class="hero-visual">
-            <div class="blob"></div>
-            <div class="hero-card">
-              <h3>JOIN<br>ANTRO</h3>
-              <p>
-                Делаем digital-продукты,
-                которыми действительно удобно пользоваться.
-              </p>
-            </div>
-          </div>
-        </div>
+    <section class="career-hero">
+      <div class="career-hero__text">
+        <p class="eyebrow">Карьера в Antro</p>
+        <h1>Команда для тех,<br> кто делает digital<br> не на словах</h1>
       </div>
+
+      <div class="career-hero__photo" aria-label="Команда Antro">
+        <img src="https://antro.cx/wp-content/themes/antro/new-assets/img/team.jpg" alt="">
+      </div>
+
+      <article class="career-quote">
+        <p>«Здесь можно спорить, проверять гипотезы и быстро видеть результат своей работы»</p>
+        <span>Команда продуктового развития</span>
+      </article>
+
+      <aside class="hero-rating" aria-label="Ключевые факты">
+        <div class="rating-row">
+          <strong>12+</strong>
+          <span>лет в e-commerce, retail и fashion</span>
+        </div>
+        <div class="rating-row">
+          <strong>80+</strong>
+          <span>запущенных продуктовых и сервисных задач</span>
+        </div>
+        <div class="rating-row">
+          <strong>Top</strong>
+          <span>практики UX, разработки и аналитики в одной команде</span>
+        </div>
+      </aside>
     </section>
 
-    <section class="pink-section" id="values">
-      <div class="container">
-        <h2>Как мы работаем</h2>
+    <section class="clients-section section-shell" id="clients">
+      <div class="split-copy">
+        <h2>Работа с крупными клиентами <span>на больших проектах</span></h2>
         <p>
-          Мы объединяем дизайн, аналитику и разработку,
-          чтобы создавать digital-решения, которые помогают бизнесу расти.
+          Вы будете проектировать и развивать продукты, которыми каждый день пользуются покупатели,
+          менеджеры и команды брендов. Здесь ценят не презентации ради презентаций, а понятный эффект.
         </p>
+      </div>
 
-        <div class="values-grid">
-          <div class="value-card">
-            <h3>Продуктовый подход</h3>
-            <p>Думаем не экранами, а пользовательскими сценариями и метриками.</p>
-          </div>
+      <div class="client-strip" aria-label="Клиенты">
+        <div class="client-card">New Balance</div>
+        <div class="client-card">Finn Flare</div>
+        <div class="client-card">Sunlight</div>
+        <div class="client-card">Kiko Milano</div>
+        <div class="client-card">HyperPC</div>
+      </div>
+    </section>
 
-          <div class="value-card">
-            <h3>Без бюрократии</h3>
-            <p>Короткие циклы, быстрые решения и прозрачная коммуникация.</p>
-          </div>
+    <section class="geo-section section-dark" id="life">
+      <div class="statement">
+        <h2>Второй дом даже для тех, кто находится <span>далеко от офиса</span></h2>
+      </div>
 
-          <div class="value-card">
-            <h3>Рост через практику</h3>
-            <p>Сложные проекты, исследования и реальные задачи.</p>
-          </div>
+      <div class="geo-visual" aria-hidden="true">
+        <div class="globe">
+          <span class="pin pin-1"></span>
+          <span class="pin pin-2"></span>
+          <span class="pin pin-3"></span>
+          <span class="pin pin-4"></span>
+          <span class="pin pin-5"></span>
+        </div>
+      </div>
 
-          <div class="value-card">
-            <h3>Сильная команда</h3>
-            <p>Дизайнеры, аналитики и разработчики работают вместе.</p>
-          </div>
-
-          <div class="value-card">
-            <h3>Эксперименты</h3>
-            <p>Проверяем гипотезы и тестируем новые подходы.</p>
-          </div>
-
-          <div class="value-card">
-            <h3>Насмотренность</h3>
-            <p>Следим за лучшими мировыми digital-практиками.</p>
-          </div>
+      <div class="geo-stats">
+        <div class="rating-row">
+          <strong>8 городов</strong>
+          <span>работаем распределенно, но синхронно</span>
+        </div>
+        <div class="rating-row">
+          <strong>2 формата</strong>
+          <span>офис, гибрид или удаленная команда под проект</span>
         </div>
       </div>
     </section>
 
-    <section class="jobs" id="jobs">
-      <div class="container">
-        <h2>Кого мы ищем</h2>
-
-        <div class="jobs-grid">
-          <div class="job-card">
-            <div class="job-image">✦</div>
-            <h3>Product Designer</h3>
-            <p>
-              UX/UI, исследования, customer journeys
-              и проектирование сложных интерфейсов.
-            </p>
-
-            <div class="job-tags">
-              <span>Figma</span>
-              <span>UX</span>
-              <span>Research</span>
-              <span>E-commerce</span>
-            </div>
-
-            <a href="#contact" class="btn">Подробнее</a>
-          </div>
-
-          <div class="job-card">
-            <div class="job-image">◉</div>
-            <h3>Frontend Developer</h3>
-            <p>
-              Современный frontend,
-              анимации и продуктовые интерфейсы.
-            </p>
-
-            <div class="job-tags">
-              <span>Vue</span>
-              <span>Nuxt</span>
-              <span>GSAP</span>
-              <span>TypeScript</span>
-            </div>
-
-            <a href="#contact" class="btn">Подробнее</a>
-          </div>
-
-          <div class="job-card">
-            <div class="job-image">△</div>
-            <h3>Product Analyst</h3>
-            <p>
-              Метрики, аналитика,
-              гипотезы и рост digital-продуктов.
-            </p>
-
-            <div class="job-tags">
-              <span>GA4</span>
-              <span>SQL</span>
-              <span>Funnels</span>
-              <span>Growth</span>
-            </div>
-
-            <a href="#contact" class="btn">Подробнее</a>
-          </div>
-        </div>
+    <section class="text-feature section-shell">
+      <div>
+        <h2>Небанальные командные встречи <span>и рост через практику</span></h2>
       </div>
+      <p>
+        Собираемся на продуктовые разборы, внутренние лекции и воркшопы. Разбираем кейсы,
+        показываем незавершенное, учимся у дизайнеров, аналитиков и разработчиков из соседних команд.
+      </p>
     </section>
 
-    <section class="pink-section" id="life">
-      <div class="container">
-        <h2>Жизнь внутри Antro</h2>
+    <section class="wellbeing-section section-shell">
+      <div class="wellbeing-copy">
+        <h2>Забота о здоровье <span>и спокойном ритме</span></h2>
         <p>
-          Команда, внутренние лекции, поездки,
-          исследования и совместные эксперименты.
+          Уважаем личное время, планируем загрузку и не героизируем переработки. Внутри есть поддержка,
+          понятные процессы и пространство для профессионального взросления.
         </p>
+      </div>
 
-        <div class="life-grid">
-          <div class="life-item large">
-            <div class="life-caption">Командные встречи</div>
-          </div>
-
-          <div class="life-item">
-            <div class="life-caption">Workshop</div>
-          </div>
-
-          <div class="life-item">
-            <div class="life-caption">Research</div>
-          </div>
-
-          <div class="life-item">
-            <div class="life-caption">Конференции</div>
-          </div>
-
-          <div class="life-item">
-            <div class="life-caption">Creative sessions</div>
-          </div>
-        </div>
+      <div class="wellbeing-photo">
+        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1300&q=82" alt="Командная практика для восстановления">
       </div>
     </section>
 
-    <section class="culture">
-      <div class="container">
-        <h2>Нам важно</h2>
+    <section class="merch-section">
+      <div class="merch-photo">
+        <img src="https://antro.cx/wp-content/themes/antro/new-assets/img/team.jpg" alt="Команда Antro">
+      </div>
 
-        <div class="culture-grid">
-          <div class="culture-box">
-            <h3>Что ценим</h3>
-            <ul>
-              <li>Самостоятельность</li>
-              <li>Системное мышление</li>
-              <li>Насмотренность</li>
-              <li>Инициативность</li>
-              <li>Желание расти</li>
-            </ul>
-          </div>
+      <div class="merch-copy">
+        <p class="eyebrow eyebrow_light">Команда и мерч</p>
+        <h2>Подарим пакет заботы, чтобы вы быстро почувствовали себя частью Antro</h2>
+      </div>
 
-          <div class="culture-box">
-            <h3>Что не любим</h3>
-            <ul>
-              <li>Микроменеджмент</li>
-              <li>Формальность ради формальности</li>
-              <li>Токсичность</li>
-              <li>Отсутствие инициативы</li>
-              <li>Работу «для галочки»</li>
-            </ul>
-          </div>
-        </div>
+      <div class="merch-card">
+        <span>Welcome kit</span>
+        <strong>стикеры, худи, полезные сервисы и люди рядом</strong>
       </div>
     </section>
 
-    <section class="cta" id="contact">
-      <div class="container">
+    <section class="offices-section" id="offices">
+      <div class="office-photo">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=82" alt="Рабочее пространство">
+      </div>
+
+      <div class="office-cards" aria-label="Офисы и форматы работы">
+        <article class="office-card office-card_accent">
+          <strong>Москва</strong>
+          <span>Проектные встречи, клиенты, воркшопы и живые синки</span>
+        </article>
+        <article class="office-card">
+          <strong>Удаленно</strong>
+          <span>Команда распределена, процессы прозрачные, созвоны короткие</span>
+        </article>
+        <article class="office-card">
+          <strong>Гибрид</strong>
+          <span>Можно миксовать офис, дом и проектные выезды</span>
+        </article>
+        <article class="office-card">
+          <strong>Комьюнити</strong>
+          <span>Пишем статьи, проводим вебинары и делимся опытом</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="jobs-section section-shell" id="jobs">
+      <h2>Вакансии</h2>
+
+      <div class="vacancies">
+        <a class="vacancy" href="mailto:hello@antro.cx?subject=Product%20Designer">
+          <span class="vacancy__team">Antro</span>
+          <strong>Product Designer</strong>
+          <p>UX/UI, исследования, сценарии интернет-магазинов и дизайн-системы.</p>
+        </a>
+
+        <a class="vacancy" href="mailto:hello@antro.cx?subject=Frontend%20Developer">
+          <span class="vacancy__team">Antro</span>
+          <strong>Frontend Developer</strong>
+          <p>Интерфейсы на Vue/Nuxt, анимации, аккуратная верстка и продуктовая логика.</p>
+        </a>
+
+        <a class="vacancy" href="mailto:hello@antro.cx?subject=Project%20Manager">
+          <span class="vacancy__team">Antro</span>
+          <strong>Project Manager</strong>
+          <p>Технические проекты, коммуникация с клиентом, планирование и контроль поставки.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-shell contact-shell">
         <div>
-          <h2>Давай делать сильный e-commerce вместе</h2>
-          <p>
-            Если тебе близок наш подход —
-            отправь резюме или портфолио.
-          </p>
+          <p class="eyebrow">Отклик</p>
+          <h2>Расскажите, чем хотите быть полезны команде</h2>
         </div>
 
-        <form class="form" action="#" method="post">
-          <input type="text" name="name" placeholder="Ваше имя" autocomplete="name" required>
-          <input type="text" name="contact" placeholder="Telegram / Email" autocomplete="email" required>
-          <input type="url" name="portfolio" placeholder="Ссылка на портфолио" autocomplete="url">
-          <textarea name="message" placeholder="Расскажите немного о себе"></textarea>
-
-          <button type="submit" class="btn">Отправить заявку</button>
+        <form class="career-form" action="#" method="post">
+          <input type="text" name="name" placeholder="Имя" autocomplete="name" required>
+          <input type="text" name="contact" placeholder="Telegram или email" autocomplete="email" required>
+          <input type="url" name="portfolio" placeholder="Портфолио / LinkedIn / GitHub" autocomplete="url">
+          <textarea name="message" placeholder="Коротко о себе"></textarea>
+          <button type="submit" class="btn btn_wide">Отправить</button>
         </form>
       </div>
     </section>
   </main>
 
-  <footer>
-    © ANTRO — Career Page Concept
+  <footer class="footer">
+    <span>© Antro</span>
+    <a href="mailto:hello@antro.cx">hello@antro.cx</a>
   </footer>
 </body>
 </html>
